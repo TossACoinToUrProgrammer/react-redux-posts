@@ -4,8 +4,8 @@ export const censoredWordMiddleWare=({dispatch})=>{
     return (next)=>{
         return (action)=>{
             if(action.type===CREATE_POST){
-                if(action.payload.title.includes('еблан')){
-                    alert('Ты еблан');
+                if(action.payload.title.includes('мат')){
+                    alert('мат');
                     return 0;
                 }
             }
